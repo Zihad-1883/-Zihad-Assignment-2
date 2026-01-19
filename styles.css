@@ -70,7 +70,7 @@ nav a{
 /* banner-style */
 
 .banner{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background: url('B13-A02-TechWave/assets/hero-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@ nav a{
 }
 
 .banner-content{
-    border: 2px solid seagreen; 
+    /* border: 2px solid seagreen;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@ nav a{
 }
 
 .banner-content .circle{
-    border: 6px solid black;
+    /* border: 6px solid black; */
     width: 100%;
     margin-bottom: 40px;
 }
@@ -153,6 +153,11 @@ nav a{
     padding: 13px 20px;
 }
 
+.micro{
+    position: absolute;
+    top: 33%;
+}
+
 
 /* about-style */
 
@@ -160,6 +165,7 @@ nav a{
 
 main{
     background-color: rgba(26, 11, 46, 1);
+    
     
 }
 
@@ -224,8 +230,113 @@ hr{
 }
 
 
+/* choose-style */
 
+.choose h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+.choose .grid-container{
+    border: 2px solid;
+    width: 75%;
+    max-width: 1990px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+
+.audio{
+    grid-row: 1/span 2;
+    grid-column: 1/span 1;
+}
+
+.audio img{
+    margin: 110px 280px 16px 40px;
+}
+
+.audio h2{
+    margin: 0 40px 16px;
+}
+
+.audio p{
+    margin: 0 40px 110px;
+}
+
+.mobile,
+.global{
+    grid-column: 2/span 3;
+}
+
+.mobile img,
+.global img,
+.interviews img{
+    margin: 40px 690px 16px 40px;
+}
+
+.mobile h2,
+.global h2,
+.interviews h2{
+    margin-left: 40px;
+    margin-bottom: 16px;
+    margin-right: 40px;
+}
+
+.mobile p,
+.global p,
+.interviews p{
+    margin: 0 40px 40px;
+}
+
+.interviews{
+    grid-column: 1/span 2;
+}
+
+.resources {
+    grid-column: 3 / span 1; 
+}
+
+.resources img{
+    margin: 40px 280px 16px 40px;
+}
+
+.resources h2{
+    margin-left: 40px;
+    margin-bottom: 16px;
+    margin-right: 40px;
+}
+
+.resources p{
+   margin: 0 40px 40px;
+}
+.grid-contents{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+}
+
+.grid-container .grid-contents img{
+    margin-bottom: 16px;
+}
+
+.grid-container .grid-contents h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
+
+.grid-container .grid-contents p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+}
 
 .hidden{
     display: none;
@@ -236,7 +347,7 @@ hr{
 @media screen and (max-width:576px){
 
     .nav-menu,
-    button{
+    .btn{
         display: none;
     }
 
@@ -293,7 +404,39 @@ hr{
         align-items: center;
         gap: 40px;
     }
+    
+    /* .banner{
+        background: url('B13-A02-TechWave/assets/Image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    }
+
+    .banner-content .circle{
+    border: none;
+    width: 50%;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    }
+
+    .micro {
+        width: 10%;
+    position: absolute;
+    top: 25%;
+} */
+
+    .choose .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -301,7 +444,7 @@ hr{
 
 @media screen and (min-width:577px) and (max-width:992px){
     .nav-menu,
-    button{
+    .btn{
         display: none;
     }
 
