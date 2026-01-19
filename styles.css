@@ -105,10 +105,12 @@ main{
 }
 
 .card-container{
+    /* border: 2px solid; */
+    text-align: center;
     margin-top: 80px;
-    
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -156,8 +158,11 @@ hr{
     }
     
     .about{
-        width: 90%;
+        width: 95%;
+        max-width: 1990px;
         margin: 40px auto;
+        padding: 40px 0;
+        
     }
     
     .about br{
@@ -171,6 +176,7 @@ hr{
     .about .texts h1{
         font-size: 2rem;
         font-weight: 700;
+        margin-top: 0;
         margin-bottom: 16px;
     }
 
@@ -182,7 +188,18 @@ hr{
     letter-spacing: 0;
     opacity: 0.8;
     margin-bottom: 40px
-}
+    }
+
+    .card-container{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+
 }
 
 /* tablet-responsive */
@@ -203,5 +220,47 @@ hr{
     #hamburger-menu{
         display: inline;
         margin: 18px 20px 18px 0;
+    }
+
+    .about{
+        width: 95%;
+        max-width: 1990px;
+        margin: 70px auto;
+        padding: 70px 0;
+        
+    }
+    
+    .about br{
+        display: none;
+    }
+
+    #br{
+        display: inline;
+    }
+    
+    .about .texts h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .about .texts p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    opacity: 0.8;
+    margin-bottom: 70px
+    }
+
+    .card-container{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        /* gap: 20px; */
     }
 }
