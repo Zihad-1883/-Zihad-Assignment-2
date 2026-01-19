@@ -48,7 +48,7 @@ nav a{
     margin-right: 32px;
 }
 
-button{
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,17 +67,107 @@ button{
 }
 
 
+/* banner-style */
+
+.banner{
+    border: 2px solid red;
+    background: url('B13-A02-TechWave/assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: auto 1200px; */
+}
+
+.banner-content{
+    border: 2px solid seagreen; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 34%; */
+    margin: 110px auto;
+}
+
+.banner-content .circle{
+    border: 6px solid black;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.banner-content .circle img{
+    width: 75%;
+    /* padding-left: 10px; */
+}
+
+.banner .banner-content h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.banner .banner-content p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.banner .banner-content .banner-btn{
+    display: flex;
+    gap: 8px;
+    /* margin-bottom: 101px; */
+}
+
+.banner .banner-btn .alt-btn0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient( 47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    padding: 12.5px 16px;
+    border: none;
+    border-radius: 10000px;
+}
+.banner .banner-btn .alt-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-color: rgba(0, 255, 136, 1);
+    background-color: transparent;
+    border-radius: 10000px;
+    color: rgba(0, 255, 136, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 13px 20px;
+}
+
+
 /* about-style */
+
+
 
 main{
     background-color: rgba(26, 11, 46, 1);
+    
 }
 
 .about{
     /* border: 2px solid red; */
     max-width: 1990px;
     width: 75%;
-    margin: 101px auto;
+    margin: 0 auto;
     padding: 50px 0 120px
     /* padding: 20px 0; */
 }
@@ -136,6 +226,11 @@ hr{
 
 
 
+
+.hidden{
+    display: none;
+}
+
 /* mobile-responsive */
 
 @media screen and (max-width:576px){
@@ -160,7 +255,7 @@ hr{
     .about{
         width: 95%;
         max-width: 1990px;
-        margin: 40px auto;
+        margin: 0 auto;
         padding: 40px 0;
         
     }
@@ -225,7 +320,7 @@ hr{
     .about{
         width: 95%;
         max-width: 1990px;
-        margin: 70px auto;
+        margin: 0 auto;
         padding: 70px 0;
         
     }
