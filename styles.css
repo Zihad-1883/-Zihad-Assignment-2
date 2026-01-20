@@ -409,6 +409,60 @@ iframe{
 }
 
 
+/* host-style */
+
+.host{
+    /* border: 2px solid red; */
+    margin-top: 120px;
+}
+
+.host h1{
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.host-content{
+    /* border: 2px solid beige; */
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    width: 75%;
+    max-width: 1990px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    gap: 24px;
+}
+
+.host-content h2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.host-content p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.logos{
+    /* border: 1px solid; */
+    text-align: start;
+    display: flex;
+    gap: 8px;
+}
+
+.logos img{
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 80%;
+    padding: 10px;
+}
 
 /* mobile-responsive */
 
@@ -506,18 +560,21 @@ iframe{
 } */
 
     .choose .grid-container,
-    .feature-container{
+    .feature-container,
+    .host-content{
         display: flex;
         flex-direction: column;
         width: 90%;
     }
-
+    *{
+        overflow-x: hidden;
+    }
 }
 
 /* tablet-responsive */
 
 @media screen and (min-width:577px) and (max-width:992px){
-    .nav-menu,
+       .nav-menu,
     .btn{
         display: none;
     }
@@ -533,12 +590,12 @@ iframe{
         display: inline;
         margin: 18px 20px 18px 0;
     }
-
+    
     .about{
         width: 95%;
         max-width: 1990px;
         margin: 0 auto;
-        padding: 70px 0;
+        padding: 40px 0;
         
     }
     
@@ -554,7 +611,7 @@ iframe{
         font-size: 2rem;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
     }
 
     .about .texts p{
@@ -564,15 +621,27 @@ iframe{
     line-height: 20px;
     letter-spacing: 0;
     opacity: 0.8;
-    margin-bottom: 70px
+    margin-bottom: 40px
     }
 
     .card-container{
-        margin-top: 70px;
+        margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
         align-items: center;
-        /* gap: 20px; */
+        gap: 40px;
     }
+
+      .choose .grid-container,
+    .feature-container,
+    .host-content{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    
 }
