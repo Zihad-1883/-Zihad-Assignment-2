@@ -269,6 +269,8 @@ hr{
 
 .choose{
     background: rgba(35, 14, 61, 1);
+    /* border: 1px solid red; */
+    /* height: 1200px; */
 }
 .choose h1{
     color: rgba(255, 255, 255, 1);
@@ -279,9 +281,9 @@ hr{
     padding-top: 120px;
 }
 
-.choose .grid-container{
+.grid-container{
     /* border: 2px solid; */
-    width: 75%;
+    width: 65%;
     max-width: 1990px;
     margin: 0 auto;
     padding-bottom: 120px;
@@ -292,91 +294,73 @@ hr{
 }
 
 .audio{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
     grid-row: 1/span 2;
     grid-column: 1/span 1;
+    padding: 40px;
 }
 
 .audio img{
-    margin: 110px 280px 16px 40px;
-}
-
-.audio h2{
-    margin: 0 40px 16px;
-}
-
-.audio p{
-    margin: 0 40px 110px;
-}
-
-.mobile,
-.global{
-    grid-column: 2/span 3;
+    margin: 80px 250px 16px 0;
 }
 
 .mobile img,
+.resources img,
 .global img,
 .interviews img{
-    margin: 40px 690px 16px 40px;
-}
-
-.mobile h2,
-.global h2,
-.interviews h2{
-    margin-left: 40px;
-    margin-bottom: 16px;
-    margin-right: 40px;
-}
-
-.mobile p,
-.global p,
-.interviews p{
-    margin: 0 40px 40px;
-}
-
-.interviews{
-    grid-column: 1/span 2;
-}
-
-.resources {
-    grid-column: 3 / span 1; 
-}
-
-.resources img{
-    margin: 40px 280px 16px 40px;
-}
-
-.resources h2{
-    margin-left: 40px;
-    margin-bottom: 16px;
-    margin-right: 40px;
-}
-
-.resources p{
-   margin: 0 40px 40px;
-}
-.grid-contents{
-    border-radius: 40px;
-    background: rgba(53, 17, 101, 0.4);
-}
-
-.grid-container .grid-contents img{
     margin-bottom: 16px;
 }
 
-.grid-container .grid-contents h2{
+.grid-container h2{
+    color: rgba(255, 255, 255, 1);
     font-size: 1.5rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 1);
     margin-bottom: 16px;
 }
 
-.grid-container .grid-contents p{
+.grid-container p{
+    color: rgba(255, 255, 255, 1);
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    color: rgba(255, 255, 255, 1);
     opacity: 0.6;
 }
+
+
+.mobile{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    grid-row: 1/span 1;
+    grid-column: 2/ span 2;
+    padding: 40px;
+}
+
+.global{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    grid-row: 2/ span 1;
+    grid-column: 2/span 2;
+    padding: 40px;
+}
+
+.interviews{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    grid-row: 3/span 1;
+    grid-column: 1/span 2;
+    padding: 40px;
+}
+
+.resources{
+    grid-row: 3 / span 1;
+    grid-column: 3/span 1;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+
 
 .hidden{
     display: none;
@@ -387,7 +371,7 @@ hr{
 .feature{
     /* border: 1px solid red; */
     background: rgba(26, 11, 46, 1);
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .feature h1{
@@ -509,6 +493,7 @@ iframe{
 
 /* footer-style */
 
+
 footer{
     background: url('B13-A02-TechWave/assets/footer-bg.png');
     background-repeat: no-repeat;
@@ -558,6 +543,7 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     opacity: 0.6;
+    padding-top: 10px;
 }
 
 
@@ -566,9 +552,9 @@ footer{
 @media screen and (max-width:576px){
 
     button:hover{
-    transform: scale(1.019);
-    transition: 0.3s;
+    transform: scale(1);
     }
+
     .nav-menu,
     .btn{
         display: none;
@@ -596,11 +582,11 @@ footer{
 
     .micro{
         width: 13%;
-        top: 18%;
+        top:22%;
     }
 
     #new{
-        top: 12.5%;
+        top: 16%;
     }
 
 
