@@ -100,10 +100,17 @@ nav a{
 }
 
 .banner-content .circle{
-    /* border: 6px solid black; */
+    
     width: 100%;
     margin-bottom: 40px;
-    animation: spin 5s linear  infinite ;
+    animation: spin 3.5s linear  infinite ;
+}
+
+.micro{
+   
+    position: absolute;
+    top: 33%;
+    /* animation: spin 5s linear  infinite ; */
 }
 
 /* .banner-content .circle:hover{
@@ -114,7 +121,8 @@ nav a{
 
 
 .banner-content .circle img{
-    width: 75%;
+    width: 95%;
+    margin-top: 20px;
     /* padding-left: 10px; */
 }
 
@@ -165,12 +173,7 @@ nav a{
     padding: 13px 20px;
 }
 
-.micro{
-    /* border: 2px solid; */
-    position: absolute;
-    top: 33%;
-    animation: spin 5s linear  infinite ;
-}
+
 
 @keyframes spin {
     from{
@@ -371,7 +374,9 @@ hr{
 .feature{
     /* border: 1px solid red; */
     background: rgba(26, 11, 46, 1);
-    margin-top: 80px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .feature h1{
@@ -433,6 +438,9 @@ iframe{
     background: url('B13-A02-TechWave/assets/hero-bg.png');
 }
 
+#second .feature-text{
+    padding-bottom: 48px;
+}
 
 /* host-style */
 
@@ -504,30 +512,83 @@ footer{
 .footer-container{
     /* border: 2px solid red; */
     width: 75%;
+    max-width: 1990px;
+    margin: 0 auto;
+    padding: 200px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+}
+#TechWave{
+    margin-bottom: 60px;
+}
+.sponsors{
+    /* border: 1px solid beige; */
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.inline{
+    width: 60%;
+    display: flex;
+    padding-left: 100px;
+    gap: 25%;
+}
+.sponsors-content{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 8px;
+}
+
+.sponsors-content p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+#copyright{
+    text-align: center;
+    color: rgba(250, 250, 250, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 30px;
+}
+
+/* .footer-container{ */
+    /* border: 2px solid red; */
+    /* width: 75%;
     height: 50vh;
     max-width: 1990px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.footer-content{
-    text-align: center;
+/* .footer-content{
+    text-align: center; */
     /* border: 2px solid blue; */
-    width: 50%;
+    /* width: 50%;
     margin: auto;
-}
+} */
 
-.sponsors{
+/* .sponsors{ */
     /* border: 1px solid; */
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 35px;
-}
+} */
 
-.sponsors-content{
+/* .sponsors-content{
     display: flex;
     gap: 8px;
 }
@@ -544,7 +605,9 @@ footer{
     font-weight: 400;
     opacity: 0.6;
     padding-top: 10px;
-}
+} */
+
+
 
 
 /* mobile-responsive */
@@ -716,77 +779,81 @@ footer{
         justify-content: center;
     }
 
-    /* footer{
-        background-color:rgba(26, 11, 46, 1);
-        background: url('B13-A02-TechWave/Image.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-x: 100%; */
-        /* background-position-y: 60%; */
-        /* height: 50vh */
-        
-    /* }
-
-   .footer-container { */
-        /* border: 2px solid red; */
-        /* width: 95%;
-        height: 23.38vh;
-        max-width: 1990px;
-        margin: 0 auto; */
-        /* padding: 40px 20px; */
-        /* display: flex;
-        justify-content: normal;
-        align-items: normal;
-    } */
-/* 
-    .footer-content { */
-        /* text-align: center; */
-        /* border: 2px solid blue; */
-        /* width: 100%;
-        margin: 0;
-    } */
-
-    /* .footer-content img{
-        margin-top: 20px;
-    } */
-    /* .sponsors{ */
-        /* border: 1px solid; */
-        /* display: flex;
-        justify-content: space-around;
-        width: 50%;
-        flex-wrap: wrap;
-        margin: 24px auto;
-        gap: 20px;
-        
-    } */
-
-    /* .banner{
-        background: url('B13-A02-TechWave/assets/Image.png');
+    
+    footer {
+        /* border: 2px solid ; */
+        background:url('B13-A02-TechWave/footer.png');
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 60px 0;
     }
 
-    .banner-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .footer-container{
+        /* border: 2px sandybrown; */
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+
+   #TechWave{
     text-align: center;
-    margin: 40px auto;
-    }
+    margin-bottom: 20px;
+   }
 
-    .banner-content .circle{
-    border: none;
+   #TechWave img{
     width: 50%;
-    margin-bottom: 24px;
-    padding-top: 24px;
+   }
+
+    .footer-content {
+        /* border: 2px solid red; */
+        max-width: 1990px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .micro {
-        width: 10%;
-    position: absolute;
-    top: 25%;
-} */
+  
+
+    .sponsors{
+        width: 60%;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        /* margin: 4px 0; */
+    }
+
+    .sponsors .inline{
+        /* margin-top: 20px; */
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .sponsors-content{
+        /* border: 1px solid; */
+        display: flex;
+        gap: 8px;
+    }
+
+    .sponsors-content p{
+        color: rgba(255, 255, 255, 1);
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 0.6;
+    }
+
+    #copyright{
+        margin-top: 25px;
+        color: rgba(250, 250, 250, 1);
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: 0.6;
+    }
+   
 
     .choose .grid-container,
     .feature-container,
